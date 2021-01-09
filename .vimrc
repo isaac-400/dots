@@ -70,6 +70,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Install Ctrl-P
 Plug 'ctrlpvim/ctrlp.vim'
+" Install a theme
+Plug 'git@github.com/tomasr/molokai.git'
 call plug#end()
 
-let g:airline_solarized_bg='dark'
+let g:airline_theme="molokai"
