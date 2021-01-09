@@ -29,7 +29,7 @@ alias la="ls -la"
 # Set PS1 prompt
 # \u: userid, \h:hostname, \w: pwd
 #
-export PS1='[\h:\w]\$ '
+export PS1='[\u@\h:\w]\$ '
 #
 
 # --------------------------------------------------------------------
