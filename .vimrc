@@ -66,12 +66,7 @@ endif
 call plug#begin('~/.vim/plugged')
 " Install vim-airline
 Plug 'vim-airline/vim-airline'
-" Insall vim-airline themes
-Plug 'vim-airline/vim-airline-themes'
 " Install Ctrl-P
 Plug 'ctrlpvim/ctrlp.vim'
-" Install a theme
-Plug 'git@github.com/tomasr/molokai.git'
 call plug#end()
 
-let g:airline_theme="molokai"
