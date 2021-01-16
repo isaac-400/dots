@@ -71,6 +71,7 @@ Plug 'vim-airline/vim-airline-themes'
 " Install Ctrl-P
 Plug 'ctrlpvim/ctrlp.vim'
 " Install theme
-Plug 'ajmwagar/vim-deus'
+Plug 'danilo-augusto/vim-afterglow'
 call plug#end()
-let g:airline_theme='deus'
+colorscheme afterglow
+let g:airline_theme='afterglow'
