@@ -13,7 +13,7 @@ set number relativenumber       " Turn hybrid line numbering on
 set noswapfile                  " No swapfiles
 set smartindent                 " Have vim try to indent for you
 set nowrap                      " No line wrap
-
+set t_Co=256                    " Force the terminal to run in 256 color mode
 " Command for printing date in the file you are editing
 map ;D !!date<CR>
 
@@ -66,7 +66,11 @@ endif
 call plug#begin('~/.vim/plugged')
 " Install vim-airline
 Plug 'vim-airline/vim-airline'
+" Install airline-themes
+Plug 'vim-airline/vim-airline-themes'
 " Install Ctrl-P
 Plug 'ctrlpvim/ctrlp.vim'
+" Install theme
+Plug 'ajmwagar/vim-deus'
 call plug#end()
-
+let g:airline_theme='deus'
