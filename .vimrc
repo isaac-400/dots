@@ -5,10 +5,10 @@ set ruler			            " Show cursor position at all times
 set showcmd			            " Display incomplete commands
 set incsearch			        " Do incremental searching
 set wildmenu			        " Enable tab completion in vim
-set tabstop=4			        " Set width and column size of TAB to 4
-set softtabstop=4		        " as well as expanding TABS to spaces
+set tabstop=2			        " Set width and column size of TAB to 2
+set softtabstop=2		        " as well as expanding TABS to spaces
 set expandtab			        " and setting the indent size to
-set shiftwidth=4		        " a width of 4 also
+set shiftwidth=2		        " a width of 2 also
 set number relativenumber       " Turn hybrid line numbering on
 set noswapfile                  " No swapfiles
 set smartindent                 " Have vim try to indent for you
