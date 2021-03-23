@@ -1,6 +1,11 @@
 # Isaac's Dotfiles
 ---
+## Installation
+Run the installation script to set up everything.
+```bash
+chmod +x install.sh
+./install.sh
+```
 
-This repo currently only has my vim/bash config files.
-Send me an [email](mailto:isaac.c.feldman.23@dartmouth.edu)
- if you have any questions about its format or content.
+Feel free to create an issue or send me an [email](mailto:isaaccfeldman@gmail.com) if 
+you have any difficulties!
