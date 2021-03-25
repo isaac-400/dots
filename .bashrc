@@ -73,3 +73,9 @@ if [ -d ~/.cache/wal/ ]; then
   # To add support for TTYs this line can be optionally added.
   source ~/.cache/wal/colors-tty.sh
 fi
+# --------------------------------------------------------------------
+# setup gpg agent
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
+gpg-connect-agent updatestartuptty /bye > /dev/null
+
