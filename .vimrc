@@ -71,7 +71,8 @@ Plug 'vim-airline/vim-airline-themes'
 " Install Ctrl-P
 Plug 'ctrlpvim/ctrlp.vim'
 " Install theme
-Plug 'danilo-augusto/vim-afterglow'
+Plug 'morhetz/gruvbox'
 call plug#end()
-colorscheme afterglow
-let g:airline_theme='afterglow'
+colorscheme gruvbox
+set background=dark "enable dark mode
+let g:airline_theme='gruvbox'
