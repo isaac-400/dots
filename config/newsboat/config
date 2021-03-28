@@ -1,0 +1,9 @@
+
+# Colors
+color background white black
+color listnormal white black dim
+color listfocus black yellow bold 
+color listnormal_unread white black dim
+color listfocus_unread black yellow bold
+color info black yellow bold
+color article white black
