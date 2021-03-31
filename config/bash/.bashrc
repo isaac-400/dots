@@ -77,7 +77,7 @@ if [ -d ~/.cache/wal/ ]; then
       wal -n -i "$@"
       feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
   }
-  wal-tile "~/dotfiles/walls/1.jpg"
+  #wal-tile "~/dotfiles/walls/1.jpg"
 
 fi
 # --------------------------------------------------------------------
