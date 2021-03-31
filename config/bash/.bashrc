@@ -72,6 +72,13 @@ if [ -d ~/.cache/wal/ ]; then
 
   # To add support for TTYs this line can be optionally added.
   source ~/.cache/wal/colors-tty.sh
+
+  wal-tile() {
+      wal -n -i "$@"
+      feh --bg-scale "$(< "${HOME}/.cache/wal/wal")"
+  }
+  wal-tile "~/dotfiles/walls/1.jpg"
+
 fi
 # --------------------------------------------------------------------
 # setup gpg agent
