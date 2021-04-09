@@ -7,3 +7,7 @@ color listnormal_unread white black dim
 color listfocus_unread black yellow bold
 color info black yellow bold
 color article white black
+
+# Reload
+auto-reload yes
+reload-threads 10
