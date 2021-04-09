@@ -6,25 +6,6 @@
 
 
 # --------------------------------------------------------------------
-# aliases used for cs50
-
-alias mygcc='gcc -Wall -pedantic -std=c11 -ggdb'
-alias myvalgrind='valgrind --leak-check=full --show-leak-kinds=all'
-
-# safety aliases
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-
-# convenience aliases
-alias ls='ls -F --color=auto'
-alias mkdir='mkdir -p'
-alias which='type -all'
-alias du='du -kh'
-alias df='df -kTh'
-
-#Custom Aliases:
-alias la="ls -la"
 # --------------------------------------------------------------------
 # Set PS1 prompt
 # \u: userid, \h:hostname, \w: pwd
@@ -102,3 +83,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# load aliases
+source ./.aliases

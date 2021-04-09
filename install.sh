@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 DOTFILES_DIR=$(pwd)
 CONFIG=$DOTFILES_DIR/config
@@ -6,16 +6,15 @@ CONFIG=$DOTFILES_DIR/config
 # Create symlinks
 ln -s -f $CONFIG/vim/.vimrc ~/.vimrc
 ln -s -f $CONFIG/bash/.bashrc ~/.bashrc
-
+ln -s -f $CONFIG/bash/.aliases ~/.aliases
 
 # Setup Newsboat
-if ! [ -d ~/.newsboat ]; then
-	echo "Newsboat not installed; aborting..."
-	exit 1
+if [ -d ~/.newsboat ]; then
+  ln -s -f $CONFIG/newsboat/config ~/.newsboat/config
+  ln -s -f $CONFIG/newsboat/urls ~/.newsboat/urls
+else
+  echo "Newsboat not installed; aborting newsboat setup..."
 fi
-
-ln -s -f $CONFIG/newsboat/config ~/.newsboat/config
-ln -s -f $CONFIG/newsboat/urls ~/.newsboat/urls
 
 echo "Done!"
 exit 0

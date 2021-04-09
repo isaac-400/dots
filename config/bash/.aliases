@@ -1,0 +1,20 @@
+# aliases used for cs50
+
+alias cc='gcc -Wall -pedantic -std=c11 -ggdb'
+alias valgrind='valgrind --leak-check=full --show-leak-kinds=all'
+
+# safety aliases
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# convenience aliases
+alias ls='ls -F --color=auto'
+alias mkdir='mkdir -p'
+alias which='type -all'
+alias du='du -kh'
+alias df='df -kTh'
+
+#Custom Aliases:
+alias la="ls -la"
+alias za="zathura"
