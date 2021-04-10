@@ -3,7 +3,6 @@
 ## Installation
 Run the installation script to set up everything.
 ```bash
-chmod +x install.sh
 ./install.sh
 ```
 
