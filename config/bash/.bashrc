@@ -85,3 +85,11 @@ unset __conda_setup
 
 # load aliases
 source ./.aliases
+
+export EDITOR=vim
+
+if [ -n "$DISPLAY" ]; then
+  export BROWSER=brave
+else
+  export BROWSER=lynx
+fi
