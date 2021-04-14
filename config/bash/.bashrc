@@ -84,7 +84,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # load aliases
-source ./.aliases
+source ~/.aliases
 
 export EDITOR=vim
 
