@@ -10,7 +10,6 @@ set softtabstop=2		        " as well as expanding TABS to spaces
 set expandtab			        " and setting the indent size to
 set shiftwidth=2		        " a width of 2 also
 set number relativenumber       " Turn hybrid line numbering on
-set noswapfile                  " No swapfiles
 set smartindent                 " Have vim try to indent for you
 set nowrap                      " No line wrap
 set t_Co=256                    " Force the terminal to run in 256 color mode
