@@ -69,6 +69,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Install Ctrl-P
 Plug 'ctrlpvim/ctrlp.vim'
+" Install vim-markdown (markdown renderer)
+Plug 'plasticboy/vim-markdown'
 " Install theme
 Plug 'morhetz/gruvbox'
 call plug#end()
