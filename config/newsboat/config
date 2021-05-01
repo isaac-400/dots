@@ -33,4 +33,5 @@ bind-key U show-urls
 bind-key x pb-delete
 
 # Browser stuff
-browser linkhandler
+browser "$BROWSER"
+macro m set browser "mpv %u"; open-in-browser ; set browser "$BROWSER"
