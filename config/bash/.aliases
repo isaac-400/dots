@@ -21,8 +21,4 @@ alias la="ls -la"
 alias za="zathura"
 alias rmd="pandoc $1 -t pdf | zathura -"
 alias wx="curl wttr.in/?0"
-<<<<<<< HEAD
 alias mutt="neomutt"
-=======
-alias mutt='neomutt'
->>>>>>> b82eeabc7d01a9d35b654a222afd3a1df798ebd9
