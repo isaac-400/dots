@@ -35,3 +35,4 @@ bind-key x pb-delete
 # Browser stuff
 browser "$BROWSER"
 macro m set browser "mpv %u"; open-in-browser ; set browser "$BROWSER"
+macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser "$BROWSER"
