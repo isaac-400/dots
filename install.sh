@@ -11,7 +11,6 @@ ln -s -f $CONFIG/bash/.aliases ~/.aliases
 # Setup Newsboat
 if [ -d ~/.newsboat ]; then
   ln -s -f $CONFIG/newsboat/config ~/.newsboat/config
-  ln -s -f $CONFIG/newsboat/urls ~/.newsboat/urls
 else
   echo "Newsboat not installed; aborting newsboat setup..."
 fi
