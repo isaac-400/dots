@@ -7,6 +7,7 @@ CONFIG=$DOTFILES_DIR/config
 ln -s -f $CONFIG/vim/.vimrc ~/.vimrc
 ln -s -f $CONFIG/bash/.bashrc ~/.bashrc
 ln -s -f $CONFIG/bash/.aliases ~/.aliases
+ln -s -f $CONFIG/tmux/tmux.conf ~/.tmux.conf
 
 # Setup Newsboat
 if [ -d ~/.newsboat ]; then
