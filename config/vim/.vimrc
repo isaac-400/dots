@@ -67,11 +67,14 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 " Install airline-themes
 Plug 'vim-airline/vim-airline-themes'
-" Install Ctrl-P
-Plug 'ctrlpvim/ctrlp.vim'
 " Install theme
 Plug 'morhetz/gruvbox'
+" Install snippet manager
+Plug 'sirver/ultisnips'
 call plug#end()
 colorscheme gruvbox
 set background=dark "enable dark mode
 let g:airline_theme='gruvbox'
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
