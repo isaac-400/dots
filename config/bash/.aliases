@@ -25,3 +25,5 @@ alias wx="curl wttr.in/?0"
 
 alias greenprint="neomutt -a $@ -- GreenPrint@dartmouth.edu"
 alias ssh="kitty +kitten ssh"
+alias lm="latexmk -pdf $1 && latexmk -c $1"
+
