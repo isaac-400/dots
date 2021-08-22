@@ -64,3 +64,4 @@ fi
 
 export PATH=/home/isaac/.local/bin:$PATH
 # --------------------------------------------------------------------
+set bell-style none
