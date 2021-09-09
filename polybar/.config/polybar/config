@@ -1,0 +1,60 @@
+[bar/mybar]
+
+width = 35%
+offset-x = 65%
+line-size = 2
+
+modules-center = bspwm wired-network pulseaudio battery date power-menu 
+separator = " | "
+font-0 = "JetBrainsMono Nerd Font Mono:pixelsize=16;0"
+
+wm-restack = bspwm
+cursor-click = pointer
+
+[module/date]
+type = internal/date
+date = %b %d, %T
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+
+label-charging =  %percentage%%
+label-discharging =  %percentage%%
+label-full =  %percentage%%
+
+[module/wired-network]
+type = internal/network
+interface = "wlp61s0"
+interval = 3.0
+
+label-connected =%{A1:networkmanager_dmenu&:}直%{A}
+label-disconnected =%{A1:networkmanager_dmenu&:}睊%{A}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+label-muted = X
+click-right = "st -e pulsemixer"
+
+[module/power-menu]
+type = custom/text
+content = ""
+
+click-left = "power_opts"
+
+[module/bspwm]
+type = internal/bspwm
+
+pin-workspaces = true
+enable-click = true
+inline-mode = true
+
+format = <label-state>
+ws-icon-0 = I
+ws-icon-1 = II
+ws-icon-2 = III
+
+label-focused =" %name% "
+label-focused-underline = #ffffff
