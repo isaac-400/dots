@@ -1,5 +1,8 @@
 # Isaac's Dotfiles
 ---
+
+![screenshot of the desktop, the background is a painting of a sunset][/delete-me/2021-09-04-161421_1920x1080_scrot.png]
+
 ## Required Software:
   * vim
   * bspwm
