@@ -1,0 +1,10 @@
+text/plain; $EDITOR %s ;
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+image/*;  feh -Z %s
+video/*; mpv --quiet %s &; copiousoutput;
+audio/*; mpv %s;
+application/pdf; zathura %s;
+application/pgp-encrypted; gpg -d '%s'; copiousoutput;
+application/pgp-keys; gpg --import '%s'; copiousoutput;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; pandoc --from docx --to markdown %s; copiousoutput
+application/vnd.oasis.opendocument.text; pandoc --from odt --to markdown %s; copiousoutput

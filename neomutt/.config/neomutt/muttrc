@@ -1,0 +1,28 @@
+# vim: filetype=neomuttrc
+set smtp_authenticators = "login"
+set ssl_force_tls = yes
+
+macro index o "!mbsync -a<enter>" "update via mbsync"
+
+set reverse_name
+set fast_reply
+set forward_quote
+set sort = 'reverse-date'
+set rfc2047_parameters = yes
+set forward_format = "Fwd: %s"
+set mark_old = no
+set move = no
+set wait_key = no
+set mime_forward = yes
+unset include
+
+set mailcap_path = ~/.config/neomutt/.mailcap
+auto_view text/html
+auto_view application/pgp-encrypted
+alternative_order text/plain text/enriched text/html
+
+source ~/.config/neomutt/isaac.c.feldman.23@dartmouth.edu
+
+source ~/.config/neomutt/gruvbox/colors-gruvbox-shuber.muttrc
+# For neomutt also add this line:
+source ~/.config/neomutt/gruvbox/colors-gruvbox-shuber-extended.muttrc

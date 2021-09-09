@@ -1,0 +1,24 @@
+IMAPStore isaac.c.feldman.23@dartmouth.edu-remote
+Host imap.gmail.com
+Port 993
+User isaac.c.feldman.23@dartmouth.edu
+PassCmd "pass isaac.c.feldman.23@dartmouth.edu"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore isaac.c.feldman.23@dartmouth.edu-local
+Subfolders Verbatim
+Path /home/f0043hw/.local/share/mail/isaac.c.feldman.23@dartmouth.edu/
+Inbox /home/f0043hw/.local/share/mail/isaac.c.feldman.23@dartmouth.edu/inbox
+
+Channel isaac.c.feldman.23@dartmouth.edu
+Expunge Both
+Master :isaac.c.feldman.23@dartmouth.edu-remote:
+Slave :isaac.c.feldman.23@dartmouth.edu-local:
+Patterns * 
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+
