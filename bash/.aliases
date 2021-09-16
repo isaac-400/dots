@@ -18,11 +18,13 @@ alias cl='clear'
 
 #Custom Aliases:
 alias la="ls -la"
-alias za="zathura"
-alias rmd="pandoc $1 -t pdf | zathura -"
-alias wx="curl wttr.in/?0"
-#alias mutt="neomutt"
-
-alias greenprint="neomutt -a $@ -- GreenPrint@dartmouth.edu"
+alias za="zathura"                       # pdf reader
+alias rmd="pandoc $1 -t pdf | zathura -" # render markdowm
+alias wx="curl wttr.in/?0"               # weather
+alias bm="bashmount"                     # mounting script
+alias mutt="neomutt"
 alias lm="latexmk -pdf $1 && latexmk -c $1"
+
+# school aliases
+alias greenprint="neomutt -a $@ -- GreenPrint@dartmouth.edu"
 
